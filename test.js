@@ -38,4 +38,22 @@ describe('rundef', function () {
     expect(rundef(testObj, false, true)).to.not.equal(testObj);
     expect(rundef(testObj, true, true)).to.equal(testObj);
   });
+  it('should stop recursively remove properties below specified level', function () {
+    const testObjs0 = new Map();
+    testObjs0.set({ a: undefined, b: { c: undefined } }, { b: { c: undefined } });
+    testObjs0.set({ a: undefined, b: { c: 1, d: undefined } }, { b: { c: 1, d: undefined } });
+    for (let [input, output] of testObjs0) {
+      expect(rundef(input, false, 0)).to.eql(output);
+      expect(rundef(input, true, 0)).to.eql(output);
+    }
+
+    const testObjs1 = new Map();
+    testObjs1.set({ a: undefined, b: { c: undefined } }, { b: {} });
+    testObjs1.set({ a: undefined, b: { c: 1, d: undefined } }, { b: { c: 1 } });
+    testObjs1.set({ a: undefined, b: { c: 1, d: undefined, e: { f: undefined } } }, { b: { c: 1, e: { f: undefined } } });
+    for (let [input, output] of testObjs1) {
+      expect(rundef(input, false, 1)).to.eql(output);
+      expect(rundef(input, true, 1)).to.eql(output);
+    }
+  });
 })

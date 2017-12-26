@@ -1,6 +1,6 @@
 {
   "name": "rundef",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Remove undefined properties from object",
   "main": "index.js",
   "author": "Daniel Li <dan@danyll.com>",
