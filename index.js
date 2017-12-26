@@ -1,12 +1,18 @@
-module.exports = function removeUndefinedProperties (obj, mutate) {
+module.exports = function removeUndefinedProperties (obj, mutate, recursive) {
 	const returnObj = {};
-	Object.entries(obj).forEach(entry => {
-		if(entry[1] === undefined) {
+	Object.entries(obj).forEach(([key, val]) => {
+		if(val === undefined) {
 			if (mutate) {
-				delete obj[entry[0]];
+				delete obj[key];
 			}
-		} else if (!mutate) {
-      returnObj[entry[0]] = entry[1];
+		} else {
+      let recursiveVal;
+      if (recursive && val !== null && typeof val === 'object') {
+        recursiveVal = removeUndefinedProperties(val, mutate, true);
+      }
+      if (!mutate) {
+        returnObj[key] = recursiveVal || val;
+      }
     }
 	})
 	return mutate ? obj : returnObj;

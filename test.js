@@ -23,4 +23,19 @@ describe('rundef', function () {
     expect(returnedVal).to.eql({});
     expect(testObj).to.equal(returnedVal);
   });
+
+  it('should recursively remove undefined properties when recursive is truthy', function () {
+    const testObjs = new Map();
+    testObjs.set({ a: undefined, b: { c: undefined } }, { b: {} });
+    testObjs.set({ a: undefined, b: { c: 1, d: undefined } }, { b: { c: 1 } });
+    for (let [input, output] of testObjs) {
+      expect(rundef(input, false, true)).to.eql(output);
+      expect(rundef(input, true, true)).to.eql(output);
+    }
+  })
+  it('should recursively remove undefined properties from the object itself when mutate and recursive are truthy', function () {
+    const testObj = { a: undefined, b: { c: 1, d: undefined } };
+    expect(rundef(testObj, false, true)).to.not.equal(testObj);
+    expect(rundef(testObj, true, true)).to.equal(testObj);
+  });
 })
