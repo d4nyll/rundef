@@ -9,6 +9,7 @@ Remove `undefined` properties from object.
 ## Install
 
 [![NPM](https://nodei.co/npm/rundef.png?compact=true)](https://nodei.co/npm/rundef/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Frundef.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Frundef?ref=badge_shield)
 
 ```
 $ npm install rundef
@@ -72,3 +73,7 @@ output;
 }
 
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Frundef.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Frundef?ref=badge_large)
