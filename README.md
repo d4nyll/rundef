@@ -2,7 +2,8 @@
 
 Remove `undefined` properties from object.
 
-[![Build Status](https://travis-ci.org/d4nyll/rundef.svg?branch=master)](https://travis-ci.org/d4nyll/rundef) [![codecov](https://codecov.io/gh/d4nyll/rundef/branch/master/graph/badge.svg)](https://codecov.io/gh/d4nyll/rundef) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5d03700550e441c59d343b1af0a8e783)](https://www.codacy.com/app/d4nyll/rundef?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=d4nyll/rundef&amp;utm_campaign=Badge_Grade) [![CodeFactor](https://www.codefactor.io/repository/github/d4nyll/rundef/badge)](https://www.codefactor.io/repository/github/d4nyll/rundef) [![Test Coverage](https://api.codeclimate.com/v1/badges/104604b0609a8722f8b6/test_coverage)](https://codeclimate.com/github/d4nyll/rundef/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/104604b0609a8722f8b6/maintainability)](https://codeclimate.com/github/d4nyll/rundef/maintainability) [![NSP Status](https://nodesecurity.io/orgs/d4nyll/projects/d5c67ec9-8c1b-4aef-8971-fe60572adc08/badge)](https://nodesecurity.io/orgs/d4nyll/projects/d5c67ec9-8c1b-4aef-8971-fe60572adc08) [![Known Vulnerabilities](https://snyk.io/test/github/d4nyll/rundef/badge.svg)](https://snyk.io/test/github/d4nyll/rundef) [![Greenkeeper badge](https://badges.greenkeeper.io/d4nyll/rundef.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/d4nyll/rundef.svg?branch=master)](https://travis-ci.org/d4nyll/rundef) [![codecov](https://codecov.io/gh/d4nyll/rundef/branch/master/graph/badge.svg)](https://codecov.io/gh/d4nyll/rundef) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5d03700550e441c59d343b1af0a8e783)](https://www.codacy.com/app/d4nyll/rundef?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=d4nyll/rundef&amp;utm_campaign=Badge_Grade) [![CodeFactor](https://www.codefactor.io/repository/github/d4nyll/rundef/badge)](https://www.codefactor.io/repository/github/d4nyll/rundef) [![Test Coverage](https://api.codeclimate.com/v1/badges/104604b0609a8722f8b6/test_coverage)](https://codeclimate.com/github/d4nyll/rundef/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/104604b0609a8722f8b6/maintainability)](https://codeclimate.com/github/d4nyll/rundef/maintainability) [![NSP Status](https://nodesecurity.io/orgs/d4nyll/projects/d5c67ec9-8c1b-4aef-8971-fe60572adc08/badge)](https://nodesecurity.io/orgs/d4nyll/projects/d5c67ec9-8c1b-4aef-8971-fe60572adc08) [![Known Vulnerabilities](https://snyk.io/test/github/d4nyll/rundef/badge.svg)](https://snyk.io/test/github/d4nyll/rundef) [![Greenkeeper badge](https://badges.greenkeeper.io/d4nyll/rundef.svg)](https://greenkeeper.io/) 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Frundef.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Frundef?ref=badge_shield)
 
 **N.B.** Does not remove `null` or falsy values, just `undefined`.
 
@@ -72,3 +73,7 @@ output;
 }
 
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fd4nyll%2Frundef.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fd4nyll%2Frundef?ref=badge_large)
