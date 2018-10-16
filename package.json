@@ -1,7 +1,7 @@
 {
   "name": "rundef",
   "description": "Remove undefined properties from object",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "author": "Daniel Li <dan@danyll.com> (http://danyll.com/)",
   "bugs": {
     "url": "https://github.com/d4nyll/rundef/issues",
