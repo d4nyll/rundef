@@ -26,6 +26,6 @@
     "url": "https://github.com/d4nyll/rundef.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test.js"
   }
 }
